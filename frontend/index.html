@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uptime Monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Мониторинг сайтов</h1>
+
+    <form id="add-form">
+      <input type="url" id="url-input" placeholder="https://example.com" required>
+      <button type="submit">Добавить сайт</button>
+    </form>
+
+    <div id="error-msg" class="error-text"></div>
+
+    <div class="controls">
+      <button id="refresh-btn">Обновить статус</button>
+    </div>
+
+    <div id="sites-list" class="sites-grid"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
